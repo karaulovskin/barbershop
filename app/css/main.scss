@@ -1,0 +1,18 @@
+// vars
+$darkgrey: #242424;
+$grey: #e5e5e5;
+$brown: #663d15;
+
+// layout
+@import "../bower/normalize-css/normalize";
+@import "_misc/fonts";
+@import "_misc/mixins";
+@import "_misc/adjustment";
+
+// styles
+@import "sections/common";
+@import "sections/header";
+@import "sections/main";
+@import "sections/features";
+@import "sections/index-content";
+@import "sections/footer";

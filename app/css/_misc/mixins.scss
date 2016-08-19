@@ -1,0 +1,27 @@
+@mixin inlineblock($valign: top) {
+	display: inline-block;
+	vertical-align: $valign;
+}
+
+@mixin transform($rotate) {
+	-webkit-transform: $rotate;
+	-moz-transform: $rotate;
+	-ms-transform: $rotate;
+	-o-transform: $rotate;
+	transform: $rotate;
+}
+
+@mixin transition($tr) {
+	-webkit-transition: $tr;
+	-moz-transition: $tr;
+	-o-transition: $tr;
+	transition: $tr;
+}	
+
+%clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}

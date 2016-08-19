@@ -1,0 +1,43 @@
+.header {
+	background: #000;
+}
+
+.header-menu {
+	float: left;
+	width: 80%;
+}
+
+.nav {
+	font-size: 0;
+}
+
+.nav__item {
+	margin: 0 0 0 40px;
+	font-size: 16px;
+	@include inlineblock(middle);
+
+	&:first-child {
+		margin: 0;
+	}
+}
+
+.nav__link {
+	color: #fff;
+}
+
+.header-user {
+	float: right;
+	width: 20%;
+	text-align: right;
+}
+
+.user-block {
+	display: inline-block;
+	width: 66px;
+}
+
+.user-block__link {
+	display: block;
+	color: #fff;
+	background: url(../img/icons/user-log.png) 0 3px no-repeat;
+}
