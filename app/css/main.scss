@@ -1,6 +1,6 @@
 // vars
 $darkgrey: #242424;
-$grey: #e5e5e5;
+$grey: #aba9a7;
 $brown: #663d15;
 
 // layout
@@ -10,9 +10,7 @@ $brown: #663d15;
 @import "_misc/adjustment";
 
 // styles
-@import "sections/common";
 @import "sections/header";
-@import "sections/main";
-@import "sections/features";
-@import "sections/index-content";
+@import "sections/index";
+@import "sections/inner";
 @import "sections/footer";

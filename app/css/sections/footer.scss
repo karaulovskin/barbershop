@@ -21,6 +21,10 @@
 .contacts__link {
 	color: #fff;
 	text-decoration: underline;
+
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 .footer-socials {
