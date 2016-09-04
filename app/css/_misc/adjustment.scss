@@ -58,7 +58,6 @@ button, input {
 		content: "";
 		display: block;
 		height: 193px;
-		margin: -193px 0 0 0;
 	}
 }
 
@@ -66,4 +65,13 @@ button, input {
 	width: 940px;
 	margin: 0 auto;
 	@extend %clearfix;
+}
+
+.form__input {
+	display: block;
+    border: 2px solid #000;
+
+    &:focus {
+    	border: 2px solid $brown;
+    }
 }

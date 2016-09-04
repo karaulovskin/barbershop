@@ -13,7 +13,7 @@
 }
 
 .inner__title {
-	padding: 0 0 25px 0;
+	margin: 0 0 15px 0;
 	color: #000;
 	font-size: 30px;
 	line-height: 42px;
@@ -27,22 +27,6 @@
 	display: inline-block;
 	position: relative;
 	padding: 0 40px 0 0;
-}
-
-.current a {
-	color: $grey;
-
-	&::after {
-		display: none;
-	}
-}
-
-.breadcrumbs__link {
-	color: #000;
-
-	&:hover {
-		text-decoration: underline;
-	}
 
 	&::after {
 		content: "";
@@ -54,6 +38,25 @@
 		background: #000;
 		transform: rotate(45deg);
 	}
+
+	&:last-child::after {
+		display: none;
+	} 
+}
+
+.current {
+
+	a {
+		color: $grey;
+	}
+}
+
+.breadcrumbs__link {
+	color: #000;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .content__heading {
@@ -61,29 +64,32 @@
 	text-align: center;
 }
 
-.content__heading h2 {
-	display: inline;
-	position: relative;
-	padding: 0 25px;
-	font-size: 48px;
-	line-height: 48px;
+.content__heading {
 
-	&::before {
-		content: "";
-		position: absolute;
-		top: 50%;
-		right: 100%;
-		border-bottom: 2px solid #000;
-		width: 160px;
-	}
+	h2 {
+		display: inline;
+		position: relative;
+		padding: 0 25px;
+		font-size: 48px;
+		line-height: 48px;
 
-	&::after {
-		content: "";
-		position: absolute;
-		top: 50%;
-		left: 100%;
-		border-bottom: 2px solid #000;
-		width: 160px;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 100%;
+			border-bottom: 2px solid #000;
+			width: 160px;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 100%;
+			border-bottom: 2px solid #000;
+			width: 160px;
+		}
 	}
 }
 
@@ -97,9 +103,12 @@
 	margin: 0 0 30px 0;
 }
 
-.content__title h2 {
-	font-size: 24px;
-	line-height: 30px;
+.content__title {
+
+	h2 {
+		font-size: 24px;
+		line-height: 30px;
+	}
 }
 
 .means__item {
@@ -119,22 +128,28 @@
 	}
 }
 
-.means__item span {
-	font-size: 14px;
-	line-height: 24px;
+.means__item {
+
+	span {
+		font-size: 14px;
+		line-height: 24px;
+	}
 }
 
 .price__table {
 	width: 100%;
 }
 
-.price__table td {
-	width: 50%;
-	padding: 10px 15px;
-	border: 2px solid #000;
+.price__table {
 
-	&:last-child {
-		text-align: center;
+	td {
+		width: 50%;
+		padding: 10px 15px;
+		border: 2px solid #000;
+
+		&:last-child {
+			text-align: center;
+		}
 	}
 }
 
@@ -153,7 +168,10 @@
 	padding: 0 80px 0 0;
 }
 
-.about__desc p {
-	font-size: 14px;
-	line-height: 24px;
+.about__desc {
+
+	p {
+		font-size: 14px;
+		line-height: 24px;
+	}
 }

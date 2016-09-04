@@ -9,6 +9,8 @@
 .logo-big {
 	display: block;
 	margin: 0 auto;
+	max-width: 370px;
+	max-height: 170px; 
 }
 
 .features {
@@ -50,11 +52,15 @@
 	}
 }
 
-.features__content p {
-	font-size: 14px;
-	line-height: 24px;
-	@include narrow();
-}
+.features__content{
+
+	p {
+		font-size: 14px;
+		line-height: 24px;
+		@include narrow();
+	}
+} 
+
 
 .index-content {
 	padding: 45px 80px;
@@ -76,7 +82,7 @@
 }
 
 .index-content__right {
-	padding: 0 0 0 95px;
+	padding: 0 0 0 90px;
 }
 
 .news__list {
@@ -98,13 +104,19 @@
 	}
 }
 
-.news__item p {
-	margin: 0 0 5px;
-	font-size: 14px;
+.news__item {
+
+	p {
+		margin: 0 0 5px;
+		font-size: 14px;
+	}
 }
 
-.news__item time {
-	text-transform: none;
+.news__item {
+
+	time {
+		text-transform: none;
+	}
 }
 
 .gallery__block {
@@ -170,28 +182,28 @@
 	margin: 0 0 40px;
 }
 
-.contacts__desc p {
-	margin: 0 0 25px;
+.contacts__desc {
+
+	p {
+		margin: 0 0 25px;
+	}
 }
 
-.feedback p {
-	margin: 0 0 25px;
+.feedback {
+
+	p {
+		margin: 0 0 25px;
+	}
 }
 
 .feedback-form {
 	@extend %clearfix;
 }
 
-.feedback-form input {
-	display: block;
+.feedback-form__input {
 	width: 140px;
     padding: 10px 15px;
-    border: 2px solid #000;
     margin: 0 0 20px;
-
-    &:focus {
-    	border: 2px solid $brown;
-    }
 
 	&:nth-child(odd) {
 		float: left;
@@ -202,7 +214,11 @@
 	} 
 }
 
-.feedback-form button {
-	width: 100%;
+
+.feedback-form {
+
+	button {
+		width: 100%;
+	}
 }
 
